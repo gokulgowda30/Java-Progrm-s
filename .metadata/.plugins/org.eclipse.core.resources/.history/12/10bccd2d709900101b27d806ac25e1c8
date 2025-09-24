@@ -1,0 +1,16 @@
+package String1;
+
+import java.util.List;
+
+public class MissMatchCheckerUsingCollection {
+public static void main(String[] args) {
+	
+	String str1="Gokul";
+	String str2="Gocul";
+	
+	List<String> list=missmatchchecker(str1,str2);
+}
+public static List<String> missmatchchecker(String str1,String str2){
+	
+}
+}

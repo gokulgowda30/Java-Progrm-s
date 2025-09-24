@@ -1,0 +1,31 @@
+package String1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MissMatchCheckerUsingCollection {
+public static void main(String[] args) {
+	
+	String str1="Gokul";
+	String str2="Gocul";
+	
+	List<String> list=missmatchchecker(str1,str2);
+	if
+}
+public static List<String> missmatchchecker(String str1,String str2){
+	
+	
+	List<String> missmatch = new ArrayList<String>();
+	
+       for (int i = 0; i < str1.length(); i++) {
+		if(str1.charAt(i)!=str2.charAt(i)) {
+			missmatch.add("Missmatch of character "+str1.charAt(i)+" and "+i+" character "+str2.charAt(i)+" in the same position");
+			
+		}
+	}
+       if(str1.length() !=str2.length()) {
+    	   missmatch.add("Diffence in the lenght");
+       }
+       return missmatch;
+}
+}
